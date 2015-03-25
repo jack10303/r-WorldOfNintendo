@@ -1,7 +1,7 @@
 .DS_Store
 .sass-cache
 
-/public/WoN.css
+all.css
 
 /.codekit-cache
 /config.codekit
