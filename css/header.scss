@@ -1,0 +1,35 @@
+// HEADER
+#header {
+    background: #fff;
+    border: 0 none;
+} // #header
+
+#header-bottom-left {
+    display: table;
+    margin: 0 auto;
+
+    #header-img-a {
+        left: 0;
+        position: absolute;
+    } // #header-img-a
+
+    .redditname {
+        margin: 0;
+
+        a {
+            animation: bounceInDown 1s linear 1;
+            background: url(%%redditname%%) 0 0 no-repeat;
+            display: block;
+            height: 135px;
+            margin: 0 auto;
+            text-indent: -99999px;
+            width: 370px;
+        } // a
+    } // .redditname
+} // #header-bottom-left
+
+#header-bottom-right {
+    background: none;
+    right: 16px;
+    top: 30px;
+} // #header-bottom-right

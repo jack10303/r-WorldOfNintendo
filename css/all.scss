@@ -4,76 +4,8 @@
  *
  */
 
-// HEADER STUFF
-#header {
-    background: #940604;
-    border: none;
-    height: 230px;
-}
-
-#header-bottom-left {
-    #header-img-a {
-        float: left;
-    }
-
-    .redditname a {
-        animation: bounceInDown 1s linear 1;
-        background: url(%%redditname%%) 0 0 no-repeat;
-        display: block;
-        float: left;
-        height: 195px;
-        text-indent: -99999px;
-        width: 370px;
-    }
-
-    .tabmenu {
-        bottom: 0;
-        left: 40px;
-        position: absolute;
-    }   
-} // #header-bottom-left
-
-#header-img.default-header {
-    bottom: 0;
-    float: left;
-    left: 5px;
-    position: absolute;
-    width: 30px !important;
-}
-
-// SIDEBAR
-.side {
-}
-
-// hide X subscribers, X users here
-.subscribers .word,
-.users-online .word {
-    display: none;
-}
-
-// show custom X subscribers
-.subscribers .number::after {
-    content: ' collectors';
-}
-
-// show custom X users here
-.users-online .number::after {
-    content: ' people looking for release dates';
-}
-
-// ANIMATIONS
-@keyframes bounceInDown {
-    0%, 20% {
-        background-position: 0 -135px;
-        opacity: 0;
-    }
-    70%, 90%, 100% {
-        background-position: 0 0;
-    }
-    80%, 95% {
-        background-position: 0 -10px;
-    }
-    100% {
-        opacity: 1;
-    }
-}
+@import '_vars.scss';
+@import 'animations.scss';
+@import 'header.scss';
+@import 'tabmenu.scss';
+@import 'sidebar.scss';

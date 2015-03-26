@@ -1,0 +1,19 @@
+// SIDEBAR
+.side {
+} // .side
+
+// hide X subscribers, X users here
+.subscribers .word,
+.users-online .word {
+    display: none;
+}
+
+// show custom X subscribers
+.subscribers .number::after {
+    content: ' collectors';
+}
+
+// show custom X users here
+.users-online .number::after {
+    content: ' people looking for release dates';
+}

@@ -1,0 +1,49 @@
+// TABMENU
+#header-bottom-left .tabmenu {
+    border: 1px solid #f00;
+    margin: 22px auto 0 auto;
+
+    li {
+        margin: 0;
+
+        &:first-child {
+            a {
+                border: 0 none;
+
+                &:before {
+                    background: url(%%redditname%%) 0 0 no-repeat;
+                } // &:before
+            } // a
+        } // &:first-child
+
+        a {
+            border: 0 none;
+            border-left: 1px solid #f00;
+            display: inline-block;
+            min-width: 120px;
+            padding: 5px 10px;
+            position: relative;
+            text-align: center;
+
+            &:before {
+                animation: bounceInDown 1s linear 1 paused;
+                bottom: 100%;
+                content: '';
+                height: 100px;
+                left: 0;
+                position: absolute;
+                width: 100%;
+            } // &:before
+
+            &:hover:before {
+                animation-play-state: running;
+            } // &:hover:before
+
+            &[href*="/gilded/"],
+            &[href*="/wiki/"],
+            &[href*="/ads/"] {
+                display: none;
+            }
+        } // a
+    } // li
+} // #header-bottom-left .tabmenu
