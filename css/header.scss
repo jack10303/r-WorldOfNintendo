@@ -2,8 +2,13 @@
 #header {
     background: transparent url(%%bg-header%%) center bottom repeat-x;
     border: 0 none;
-    height: 218px;
+    height: 220px;
 } // #header
+
+#sr-header-area {
+    border: 0 none;
+    border-bottom: 3px solid $beige;
+}
 
 #header-bottom-left {
     display: table;
@@ -32,7 +37,10 @@
 } // #header-bottom-left
 
 #header-bottom-right {
-    background: none;
-    right: 16px;
-    top: 30px;
+    background: $white;
+    border-color: $black;
+    border-radius: 20px 0 0 20px;
+    border-style: solid;
+    border-width: 3px 0 3px 3px;
+    padding: 6px;
 } // #header-bottom-right
