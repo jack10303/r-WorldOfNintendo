@@ -1,8 +1,6 @@
 // TABMENU
 #header-bottom-left .tabmenu {
-    background: $white;
-    border: $border-main solid $black;
-    border-radius: 20px;
+    border: 0 none;
     margin: 0 auto;
     position: relative;
     top: 120px;
@@ -10,38 +8,63 @@
     li {
         margin: 0;
 
-        &:first-child { // reddit.com/r/sub-name/hot
+        &:nth-child(1) { // hot
             a {
-                border: 0 none;
+                border-left: $border-main solid $black;
+                border-radius: 20px 0 0 20px;
+            }
 
-                &:before {
-                    background-image: url(%%nav-mario%%);
-                } // &:before
-            } // a
-        } // &:first-child
+            a:before {
+                background-image: url(%%nav-mario%%);
+            } // &:before
+        } // &:nth-child(1)
+
+        &:nth-child(2) { // new
+            a:before {
+                background-image: url(%%nav-samus%%);
+            }
+        } // &:nth-child(2)
+
+        &:nth-child(3) { // rising
+            a:before {
+                background-image: url(%%nav-dk%%);
+            }
+        } // &:nth-child(3)
+
+        &:nth-child(4) { // controversial
+            a:before {
+                background-image: url(%%nav-link%%);
+            }
+        } // &:nth-child(4)
+
+        &:nth-child(5) { // top
+            a {
+                border-right: $border-main solid $black;
+                border-radius: 0 20px 20px 0;
+            }
+
+            a:before {
+//                background-image: url(%%nav-pikmin%%);
+            }
+        } // &:nth-child(5)
+
+        &:nth-child(6), // gilded
+        &:nth-child(7), // wiki
+        &:nth-child(8) // promoted
+        {
+            display: none;
+        }
 
         a {
-            background: none;
-            border: 0 none;
-            border-left: $border-main solid $black;
+            background: $white;
+            border: $border-main solid $black;
+            border-left: 0 none;
             color: $black;
             display: inline-block;
             min-width: 120px;
             padding: 5px 10px;
             position: relative;
             text-align: center;
-
-            &[href*="/new/"] {
-                &:before {
-                    background-image: url(%%nav-link%%);
-                }
-            } // &[href*="/new/"]
-
-            &[href*="/rising/"] {
-                &:before {
-                    background-image: url(%%nav-dk%%);
-                }
-            } // &[href*="/rising/"]
 
             &:before {
                 background-position: center 40px;
@@ -55,15 +78,13 @@
                 width: 100%;
             } // &:before
 
-            &:hover:before {
-                background-position: center 10px;
-            } // &:hover:before
+            &:hover {
+                background: url(%%bg%%);
 
-            &[href*="/gilded/"],
-            &[href*="/wiki/"],
-            &[href*="/ads/"] {
-                display: none;
-            }
+                &:before {
+                    background-position: center 10px;
+                } // &:before
+            } // &:hover
         } // a
     } // li
 } // #header-bottom-left .tabmenu
