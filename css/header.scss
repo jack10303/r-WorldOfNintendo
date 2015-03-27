@@ -1,7 +1,8 @@
 // HEADER
 #header {
-    background: #fff;
+    background: transparent url(%%bg-header%%) center bottom repeat-x;
     border: 0 none;
+    height: 218px;
 } // #header
 
 #header-bottom-left {
@@ -17,13 +18,15 @@
         margin: 0;
 
         a {
-            animation: bounceInDown 1s linear 1;
             background: url(%%redditname%%) 0 0 no-repeat;
-            display: block;
-            height: 135px;
+            bottom: 0;
+            height: 77px;
+            left: 0;
             margin: 0 auto;
+            position: absolute;
+            right: 0;
             text-indent: -99999px;
-            width: 370px;
+            width: 160px;
         } // a
     } // .redditname
 } // #header-bottom-left
