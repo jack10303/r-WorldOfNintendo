@@ -1,6 +1,5 @@
 // TABMENU
 #header-bottom-left .tabmenu {
-    border: 0 none;
     margin: 0 auto;
     position: relative;
     top: 120px;
@@ -12,7 +11,7 @@
             a {
                 border-left: $border-main solid $black;
                 border-radius: 20px 0 0 20px;
-            }
+            } // a
 
             a:before {
                 background-image: url(%%nav-mario%%);
@@ -22,30 +21,30 @@
         &:nth-child(2) { // new
             a:before {
                 background-image: url(%%nav-samus%%);
-            }
+            } // a:before
         } // &:nth-child(2)
 
         &:nth-child(3) { // rising
             a:before {
                 background-image: url(%%nav-dk%%);
-            }
+            } // a:before
         } // &:nth-child(3)
 
         &:nth-child(4) { // controversial
             a:before {
                 background-image: url(%%nav-link%%);
-            }
+            } // a:before
         } // &:nth-child(4)
 
         &:nth-child(5) { // top
             a {
                 border-right: $border-main solid $black;
                 border-radius: 0 20px 20px 0;
-            }
+            } // a
 
             a:before {
 //                background-image: url(%%nav-pikmin%%);
-            }
+            } // a:before
         } // &:nth-child(5)
 
         &:nth-child(6), // gilded
@@ -53,7 +52,14 @@
         &:nth-child(8) // promoted
         {
             display: none;
-        }
+        } // &:nth-child(6, 7, 8)
+
+        &.selected {
+            a {
+                background: url(%%bg%%);
+                color: $red;
+            } // a
+        } // .selected
 
         a {
             background: $white;
@@ -80,6 +86,7 @@
 
             &:hover {
                 background: url(%%bg%%);
+                color: $blue;
 
                 &:before {
                     background-position: center 10px;
