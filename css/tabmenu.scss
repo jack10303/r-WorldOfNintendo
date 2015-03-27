@@ -1,21 +1,21 @@
 // TABMENU
 #header-bottom-left .tabmenu {
     background: $white;
-    border: 3px solid $black;
+    border: $border-main solid $black;
     border-radius: 20px;
     margin: 0 auto;
     position: relative;
-    top: 80px;
+    top: 120px;
 
     li {
         margin: 0;
 
-        &:first-child {
+        &:first-child { // reddit.com/r/sub-name/hot
             a {
                 border: 0 none;
 
                 &:before {
-                    background: url(%%redditname%%) 0 0 no-repeat;
+                    background-image: url(%%nav-mario%%);
                 } // &:before
             } // a
         } // &:first-child
@@ -23,7 +23,7 @@
         a {
             background: none;
             border: 0 none;
-            border-left: 3px solid $black;
+            border-left: $border-main solid $black;
             color: $black;
             display: inline-block;
             min-width: 120px;
@@ -31,18 +31,32 @@
             position: relative;
             text-align: center;
 
+            &[href*="/new/"] {
+                &:before {
+                    background-image: url(%%nav-link%%);
+                }
+            } // &[href*="/new/"]
+
+            &[href*="/rising/"] {
+                &:before {
+                    background-image: url(%%nav-dk%%);
+                }
+            } // &[href*="/rising/"]
+
             &:before {
-                animation: bounceInDown 1s linear 1 paused;
-                bottom: 100%;
+                background-position: center 40px;
+                background-repeat: no-repeat;
                 content: '';
-                height: 100px;
+                height: $menu-psuedo-ht;
                 left: 0;
                 position: absolute;
+                top: -$menu-psuedo-ht - $border-main;
+                transition: background-position 1s;
                 width: 100%;
             } // &:before
 
             &:hover:before {
-                animation-play-state: running;
+                background-position: center 10px;
             } // &:hover:before
 
             &[href*="/gilded/"],
