@@ -1,5 +1,4 @@
 // Reddit Enhancement Suite styles
-
 html.res {
     #header-bottom-left .tabmenu li #viewImagesButton { // gotta be specific here because we're being specific in tabmenu.scss
         border: $border-main solid $black;
@@ -9,6 +8,7 @@ html.res {
         &:before { // a special something for those using RES
             background-image: url(%%nav-wario%%);
             bottom: -$menu-psuedo-ht - $border-main;
+            display: none;
             top: auto;
             transform: rotate(180deg);
         } // &:before
@@ -24,4 +24,10 @@ html.res {
             top: 21px;
         } // &.res-navTop
     } // #header-bottom-right
+
+    &.csstransforms { // if CSS transforms are supported, show the element above which is hidden by default
+        #header-bottom-left .tabmenu li #viewImagesButton:before {
+            display: block;
+        } // #header-bottom-left .tabmenu li #viewImagesButton:before
+    } // &.csstransforms
 } // body.res
