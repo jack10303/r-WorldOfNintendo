@@ -1,0 +1,27 @@
+// Reddit Enhancement Suite styles
+
+html.res {
+    #header-bottom-left .tabmenu li #viewImagesButton { // gotta be specific here because we're being specific in tabmenu.scss
+        border: $border-main solid $black;
+        border-radius: $border-main-rad;
+        margin-left: 20px;
+
+        &:before { // a special something for those using RES
+            background-image: url(%%nav-wario%%);
+            bottom: -$menu-psuedo-ht - $border-main;
+            top: auto;
+            transform: rotate(180deg);
+        } // &:before
+    } // #header-bottom-left .tabmenu li #viewImagesButton
+
+    #header-bottom-right {
+        border: 0 none;
+
+        // probably don't need to be this specific, but I'm not familiar enough with
+        // RES to know if there's a version that's not set to top. top is modified
+        // here because our border on #sr-header-area is 3px (not 1px).
+        &.res-navTop {
+            top: 21px;
+        } // &.res-navTop
+    } // #header-bottom-right
+} // body.res

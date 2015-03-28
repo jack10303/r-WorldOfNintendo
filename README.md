@@ -6,7 +6,6 @@ The CSS and images used on [/r/WorldOfNintendo](http://reddit.com/r/WorldOfNinte
 This repo uses [CodeKit](https://incident57.com/codekit/) to manage some SASS things for me (mostly Autoprefixer), but you can use whatever you like!
 
 ##To Do
-* special styles for RES stuff (#viewImagesButton, #header-bottom-right)
 * animate the WoN logo on hover and maybe even on load
 * consider re-doing the main background to more closely resemble what's shown on the actual product boxes (dots get smaller towards the center)
 * stylize the submit buttons
