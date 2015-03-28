@@ -10,7 +10,7 @@
         &:nth-child(1) { // hot
             a {
                 border-left: $border-main solid $black;
-                border-radius: 20px 0 0 20px;
+                border-radius: $border-main-rad 0 0 $border-main-rad;
             } // a
 
             a:before {
@@ -39,7 +39,7 @@
         &:nth-child(7) { // wiki
             a {
                 border-right: $border-main solid $black;
-                border-radius: 0 20px 20px 0;
+                border-radius: 0 $border-main-rad $border-main-rad 0;
             } // a
 
             a:before {

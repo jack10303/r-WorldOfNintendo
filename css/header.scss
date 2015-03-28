@@ -39,7 +39,7 @@
 #header-bottom-right {
     background: $white;
     border-color: $black;
-    border-radius: 20px 0 0 20px;
+    border-radius: $border-main-rad 0 0 $border-main-rad;
     border-style: solid;
     border-width: $border-main 0 $border-main $border-main;
     padding: 6px;
