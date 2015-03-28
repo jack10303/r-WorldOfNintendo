@@ -30,13 +30,13 @@
             } // a:before
         } // &:nth-child(3)
 
-        &:nth-child(4) { // controversial
+        &:nth-child(5) { // top
             a:before {
                 background-image: url(%%nav-link%%);
             } // a:before
-        } // &:nth-child(4)
+        } // &:nth-child(5)
 
-        &:nth-child(5) { // top
+        &:nth-child(7) { // wiki
             a {
                 border-right: $border-main solid $black;
                 border-radius: 0 20px 20px 0;
@@ -45,14 +45,14 @@
             a:before {
 //                background-image: url(%%nav-pikmin%%);
             } // a:before
-        } // &:nth-child(5)
+        } // &:nth-child(7)
 
+        &:nth-child(4), // controversial
         &:nth-child(6), // gilded
-        &:nth-child(7), // wiki
         &:nth-child(8) // promoted
         {
             display: none;
-        } // &:nth-child(6, 7, 8)
+        } // &:nth-child(4, 6, 8)
 
         &.selected {
             a {
