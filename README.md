@@ -7,7 +7,9 @@ This repo uses [CodeKit](https://incident57.com/codekit/) to manage some SASS th
 
 ##To Do
 * swap mario (`/hot`) with fire mario (because hot!)
-* make pikmin or olimar for `/top` nav item
+* make pikmin or someone else for `/top` nav item
+* swap `/controversial` link with `/wiki` link
+* special styles for RES stuff (#viewImagesButton, #header-bottom-right)
 * animate the WoN logo on hover and maybe even on load
 * consider re-doing the main background to more closely resemble what's shown on the actual product boxes (dots get smaller towards the center)
 * stylize the submit buttons
