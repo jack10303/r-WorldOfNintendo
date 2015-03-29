@@ -2,6 +2,21 @@
 .side {
     background: none;
 
+    #search input[type=text],
+    .sidecontentbox .content {
+        background: rgba($white, 0.7);
+        border: $border-small solid $black;
+        border-radius: $border-main-rad;
+        margin: 5px 0;
+        outline: none;
+        padding: 10px;
+    }
+
+    .spacer,
+    .titlebox form.toggle {
+        background: none;
+    }
+
     .sidebox .morelink {
         background: none;
         border: 0 none;

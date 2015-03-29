@@ -2,8 +2,23 @@
     overflow: hidden;
 
     .thing {
+        background: rgba($white, 0.7);
         border: $border-main solid $black;
         border-radius: $border-main-rad;
-        padding: 5px;
+        padding: 10px;
     } // .thing
+}
+
+.new-comment .usertext-body,
+.usertext-body {
+    background: rgba($white, 0.7);
+    border: $border-small solid $black;
+    border-radius: $border-main-rad;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+.comment .child,
+.comment .showreplies {
+    border-left: 1px solid $black;
 }
