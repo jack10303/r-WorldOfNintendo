@@ -6,7 +6,6 @@ The CSS and images used on [/r/WorldOfNintendo](http://reddit.com/r/WorldOfNinte
 This repo uses [CodeKit](https://incident57.com/codekit/) to manage some SASS things for me (mostly Autoprefixer), but you can use whatever you like!
 
 ##To Do
-* change the reader text
 * stylize the submit buttons
 * consider styling posts - add some fake content to get an idea of how things will look overall
 * make snoo image - should follow same style as `#header-bottom-right` element
