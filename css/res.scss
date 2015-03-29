@@ -7,10 +7,6 @@ html.res {
 
         &:before { // a special something for those using RES
             background-image: url(%%nav-wario%%);
-            bottom: -$menu-psuedo-ht - $border-main;
-            display: none;
-            top: auto;
-            transform: rotate(180deg);
         } // &:before
     } // #header-bottom-left .tabmenu li #viewImagesButton
 
@@ -25,9 +21,11 @@ html.res {
         } // &.res-navTop
     } // #header-bottom-right
 
-    &.csstransforms { // if CSS transforms are supported, show the element above which is hidden by default
+    &.csstransforms { // if CSS transforms are supported, make it flip around because Wario
         #header-bottom-left .tabmenu li #viewImagesButton:before {
-            display: block;
+            bottom: -$menu-psuedo-ht - $border-main;
+            top: auto;
+            transform: rotate(180deg);
         } // #header-bottom-left .tabmenu li #viewImagesButton:before
     } // &.csstransforms
 } // body.res

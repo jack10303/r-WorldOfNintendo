@@ -6,7 +6,6 @@ The CSS and images used on [/r/WorldOfNintendo](http://reddit.com/r/WorldOfNinte
 This repo uses [CodeKit](https://incident57.com/codekit/) to manage some SASS things for me (mostly Autoprefixer), but you can use whatever you like!
 
 ##To Do
-* change it so that the wario shows on the top when css transforms are not supported
 * animate the WoN logo on hover and maybe even on load
 * stylize the submit buttons
 * consider styling posts - add some fake content to get an idea of how things will look overall
