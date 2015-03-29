@@ -56,7 +56,7 @@
         &.selected {
             a {
                 background: url(%%bg%%);
-                color: $red;
+                color: $blue;
             } // a
         } // .selected
 
@@ -85,7 +85,7 @@
 
             &:hover {
                 background: url(%%bg%%);
-                color: $blue;
+                color: $red;
 
                 &:before {
                     background-position: center 10px;
