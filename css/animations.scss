@@ -1,16 +1,32 @@
 // ANIMATIONS
-@keyframes bounceInDown {
-    0%, 20% {
-        background-position: 0 -135px;
-        opacity: 0;
-    }
-    70%, 90%, 100% {
-        background-position: 0 0;
-    }
-    80%, 95% {
-        background-position: 0 -10px;
-    }
-    100% {
+@keyframes logoSlideOnHover {
+    0%, 100% {
+        background-position: center 0;
         opacity: 1;
     }
-} // @keyframes bounceInDown
+    30%, 70% {
+        opacity: 1;
+    }
+    50% {
+        background-position: 100% 0;
+        opacity: 0;
+    }
+    51% {
+        background-position: 0 0;
+    }
+} // @keyframes logoSlideOnHover
+
+@keyframes logoSlideOnLoad {
+    0%, 30% {
+        background-position: -160px 0;
+    }
+    70%, 90% {
+        background-position: 55% 0;
+    }
+    80%, 95% {
+        background-position: 45% 0;
+    }
+    100% {
+        background-position: center 0;
+    }
+} // @keyframes logoSlideOnLoad
