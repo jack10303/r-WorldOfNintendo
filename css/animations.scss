@@ -1,23 +1,6 @@
 // ANIMATIONS
-@keyframes logoSlideOnHover {
-    0%, 100% {
-        background-position: center 0;
-        opacity: 1;
-    }
-    30%, 70% {
-        opacity: 1;
-    }
-    50% {
-        background-position: 100% 0;
-        opacity: 0;
-    }
-    51% {
-        background-position: 0 0;
-    }
-} // @keyframes logoSlideOnHover
-
 @keyframes logoSlideOnLoad {
-    0%, 30% {
+    0%, 40% {
         background-position: -160px 0;
     }
     70%, 90% {

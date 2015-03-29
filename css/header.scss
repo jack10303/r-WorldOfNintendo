@@ -32,11 +32,11 @@
             position: absolute;
             right: 0;
             text-indent: -99999px;
-            transition: background-position 1s;
+            transition: background 1s;
 
             &:hover {
                 //animation: logoSlideOnHover .5s linear 1;
-                background-position: 55% 0;
+                background-position: 52% 0;
             } // &:hover
         } // a
     } // .redditname

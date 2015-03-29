@@ -7,10 +7,11 @@
         border: 0 none;
 
         a {
-            background: $white;
+            background: rgba($white, 0.7);
             border: $border-main solid $black;
             border-radius: $border-main-rad;
             color: $black;
+            transition: background 1s, color 1s;
             width: auto;
 
             &:hover {
