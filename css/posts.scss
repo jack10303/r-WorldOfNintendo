@@ -1,2 +1,9 @@
 .linklisting {
+    overflow: hidden;
+
+    .thing {
+        border: $border-main solid $black;
+        border-radius: $border-main-rad;
+        padding: 5px;
+    } // .thing
 }

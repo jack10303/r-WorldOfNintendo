@@ -6,7 +6,6 @@ The CSS and images used on [/r/WorldOfNintendo](http://reddit.com/r/WorldOfNinte
 This repo uses [CodeKit](https://incident57.com/codekit/) to manage some SASS things for me (mostly Autoprefixer), but you can use whatever you like!
 
 ##To Do
-* consider styling posts - add some fake content to get an idea of how things will look overall
 * make snoo image - should follow same style as `#header-bottom-right` element
 * restrict `announcements` and `giveaways` link flair via [this helpful link](http://www.reddit.com/r/modhelp/comments/1r6q9s/i_dont_understand_link_flair_user_can_edit/cdk7m8o)
 * make colored link flair
