@@ -11,5 +11,5 @@ This repo uses [CodeKit](https://incident57.com/codekit/) to manage some SASS th
 * consider styling posts - add some fake content to get an idea of how things will look overall
 * make snoo image - should follow same style as `#header-bottom-right` element
 * create user flair using the images I already popped out for nav items
-* consider re-doing the main background to more closely resemble what's shown on the actual product boxes (dots get smaller towards the center)
-* replace the "WORLD OF" typeface with the correct typeface (gotta find out what it is)
+* consider replacing the background image with a scanned version of the actual box background because it looks nicer
+* replace the "WORLD OF" typeface with the correct typeface (gotta find out what it is) or scan the actual cardboard
