@@ -54,7 +54,6 @@
         margin: 0;
 
         a {
-            animation: logoSlideOnLoad 1s ease-in 1;
             background: url(%%redditname%%) center 0 no-repeat;
             bottom: 0;
             height: 77px;
@@ -63,12 +62,7 @@
             position: absolute;
             right: 0;
             text-indent: -99999px;
-            transition: background 1s;
-
-            &:hover {
-                //animation: logoSlideOnHover .5s linear 1;
-                background-position: 52% 0;
-            } // &:hover
+            width: 160px;
         } // a
     } // .redditname
 } // #header-bottom-left
