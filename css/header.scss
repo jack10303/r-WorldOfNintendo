@@ -1,13 +1,15 @@
 // HEADER
 #header {
-    background: transparent url(%%bg-header%%) center bottom repeat-x;
+    background: $red;
     border: 0 none;
-    height: 260px;
+    border-bottom: $border-thick solid $black;
+    height: 250px;
+    margin: 0 0 20px 0;
 } // #header
 
 #sr-header-area {
     border: 0 none;
-    border-bottom: $border-main solid $beige;
+    border-bottom: $border-thick solid $beige;
 }
 
 #header-bottom-left {
@@ -55,7 +57,7 @@
 
         a {
             background: url(%%redditname%%) center 0 no-repeat;
-            bottom: 0;
+            bottom: -17px;
             height: 77px;
             left: 0;
             margin: 0 auto;
@@ -73,5 +75,6 @@
     border-radius: $border-main-rad 0 0 $border-main-rad;
     border-style: solid;
     border-width: $border-thick 0 $border-thick $border-thick;
+    bottom: -15px;
     padding: 6px;
 } // #header-bottom-right
