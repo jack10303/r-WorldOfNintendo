@@ -6,12 +6,14 @@ The CSS and images used on [/r/WorldOfNintendo](http://reddit.com/r/WorldOfNinte
 This repo uses [CodeKit](https://incident57.com/codekit/) to manage some SASS things for me (mostly Autoprefixer), but you can use whatever you like!
 
 ##To Do
-* stylize footer elements
+* stylize wiki stuff
 * do the snoo stuff
+* use a sprite sheet instead of saving individual files for nav stuff
+* create some `@extend`s for the commonly shared shit?
 * create user flair using the images I already popped out for nav items
 * restrict `announcements` and `giveaways` link flair via [this helpful link](http://www.reddit.com/r/modhelp/comments/1r6q9s/i_dont_understand_link_flair_user_can_edit/cdk7m8o)
 * make colored link flair
-* stylize the subtitles on the sidebar (like Release Dates, Tracking Instructions, and Rules)
+* stylize headings
 * add some more minor fancy animations on random things (search, voting buttons, default thumbnails, etc)
 * consider replacing the background image with a scanned version of the actual box background because it looks nicer
 * replace the "WORLD OF" typeface with the correct typeface (gotta find out what it is) or scan the actual cardboard

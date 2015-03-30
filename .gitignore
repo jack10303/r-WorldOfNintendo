@@ -1,7 +1,7 @@
 .DS_Store
 .sass-cache
 
-all.css
+*.css
 
 /.codekit-cache
 /config.codekit
