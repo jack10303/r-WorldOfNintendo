@@ -17,29 +17,6 @@
         background: none;
     }
 
-    .sidebox .morelink {
-        background: none;
-        border: 0 none;
-
-        a {
-            background: rgba($white, 0.7);
-            border: $border-main solid $black;
-            border-radius: $border-main-rad;
-            color: $black;
-            transition: background 1s, color 1s;
-            width: auto;
-
-            &:hover {
-                background: transparent;
-                color: $red;
-            } // &:hover
-        } // a
-
-        .nub { // heh
-            display: none;
-        } // .nub
-    } // .sidebox .morelink
-
     // hide X subscribers, X users here
     .subscribers .word,
     .users-online .word {

@@ -1,0 +1,27 @@
+// LINKS
+.sidebox .morelink,
+.discussionlink.morelink,
+.morelink {
+    background: none;
+    border: 0 none;
+    height: auto;
+
+    a {
+        background: rgba($white, 0.7);
+        border: $border-main solid $black;
+        border-radius: $border-main-rad;
+        color: $black;
+        padding: 0 20px;
+        transition: background 1s, color 1s;
+        width: auto;
+
+        &:hover {
+            background: transparent;
+            color: $red;
+        } // &:hover
+    } // a
+
+    .nub { // heh
+        display: none;
+    } // .nub
+} // .morelink

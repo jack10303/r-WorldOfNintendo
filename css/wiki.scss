@@ -1,0 +1,54 @@
+// WIKI
+.wiki-page {
+    .pageactions {
+        border: 0 none;
+
+        .wikiaction {
+            background: rgba($white, 0.7);
+            border: $border-main solid $black;
+            border-left: 0 none;
+            border-radius: 0;
+            color: $black;
+            display: inline-block;
+            margin: 0;
+            padding: 5px 10px;
+            position: relative;
+            text-align: center;
+            transition: background 1s, color 1s;
+
+            &:first-child{
+                border-left: $border-main solid $black;
+                border-radius: $border-main-rad 0 0 $border-main-rad;
+            } // &:first-child
+
+            &:hover {
+                background: transparent;
+                color: $red;
+            }
+
+            &:last-child {
+                border-radius: 0 $border-main-rad $border-main-rad 0;
+            }
+        } // .wikiaction
+
+        .wikiaction-current {
+            background: transparent;
+            color: $blue;
+        } // .wikiaction-current
+    } // .pageactions
+
+    .wiki-page-content {
+        .wiki>.toc>ul {
+            background: rgba($white, 0.7);
+            border: $border-small solid $black;
+            border-radius: $border-main-rad;
+            margin: 5px 0;
+            outline: none;
+            padding: 10px;
+
+            ul {
+                border-left: $border-small solid $black;
+            }
+        } // .wiki>.toc>ul
+    } // .wiki-page-content
+} // .wiki-page

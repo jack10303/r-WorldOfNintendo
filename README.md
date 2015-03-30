@@ -6,7 +6,6 @@ The CSS and images used on [/r/WorldOfNintendo](http://reddit.com/r/WorldOfNinte
 This repo uses [CodeKit](https://incident57.com/codekit/) to manage some SASS things for me (mostly Autoprefixer), but you can use whatever you like!
 
 ##To Do
-* stylize wiki stuff
 * do the snoo stuff
 * use a sprite sheet instead of saving individual files for nav stuff
 * create some `@extend`s for the commonly shared shit?
