@@ -4,6 +4,7 @@ The CSS and images used on [/r/WorldOfNintendo](http://reddit.com/r/WorldOfNinte
 This repo uses [CodeKit](https://incident57.com/codekit/) to manage some SASS things for me (mostly Autoprefixer), but you can use whatever you like!
 
 ##To Do
+* get rid of header-bg - it shouldn't be needed if done properly
 * use a sprite sheet instead of saving individual files for nav stuff
 * create some `@extend`s for the commonly shared shit?
 * create user flair using the images I already popped out for nav items
