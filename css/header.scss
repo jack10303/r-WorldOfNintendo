@@ -15,9 +15,40 @@
     margin: 0 auto;
 
     #header-img-a {
-        left: 0;
+        left: 10px;
         position: absolute;
+        top: 100px;
+
+        &:after {
+            background: url(%%header-mystery%%) center 0 no-repeat;
+            bottom: -49px;
+            content: '';
+            height: 49px;
+            left: -10px;
+            position: absolute;
+            width: 95px;
+        } // &:after
+
+        &:before {
+            background: url(%%header-snoo%%) center 72px no-repeat;
+            bottom: 0;
+            content: '';
+            height: 150px;
+            left: 0;
+            position: absolute;
+            transition: background 1s;
+            width: 75px;
+            z-index: -1;
+        } // &:before
+
+        &:hover:before {
+            background-position: center 0;
+        }
     } // #header-img-a
+
+    #header-img {
+        margin: 0;
+    } // #header-img
 
     .redditname {
         margin: 0;
