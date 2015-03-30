@@ -11,12 +11,17 @@
 }
 
 .new-comment .usertext-body,
-.usertext-body {
+.comment .usertext-body {
     background: rgba($white, 0.7);
     border: $border-small solid $black;
     border-radius: $border-main-rad;
     margin: 5px 0;
     padding: 10px;
+}
+
+.link .usertext-body .md {
+    background: none;
+    border: 0 none;
 }
 
 .comment .child,
