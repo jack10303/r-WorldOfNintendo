@@ -11,7 +11,8 @@
 }
 
 .new-comment .usertext-body,
-.comment .usertext-body {
+.comment .usertext-body,
+.side .usertext-body {
     background: rgba($white, 0.7);
     border: $border-small solid $black;
     border-radius: $border-main-rad;
