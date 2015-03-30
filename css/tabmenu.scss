@@ -1,15 +1,15 @@
 // TABMENU
 #header-bottom-left .tabmenu {
-    margin: 0 auto;
-    position: relative;
-    top: 120px;
+    bottom: 0;
+    left: 290px;
+    position: absolute;
 
     li {
         margin: 0;
 
         &:nth-child(1) { // hot - fire mario
             a {
-                border-left: $border-main solid $black;
+                border-left: $border-thick solid $black;
                 border-radius: $border-main-rad 0 0 $border-main-rad;
 
                 &:before {
@@ -88,7 +88,7 @@
 
         a {
             background: $white;
-            border: $border-main solid $black;
+            border: $border-thick solid $black;
             border-left: 0 none;
             color: $black;
             display: inline-block;
@@ -105,8 +105,7 @@
                 left: 0;
                 margin: 0 auto;
                 position: absolute;
-                right: 0;
-                top: -$menu-psuedo-ht - $border-main;
+                top: -$menu-psuedo-ht - $border-thick;
                 transition: background 1s;
                 width: 130px;
             } // &:before

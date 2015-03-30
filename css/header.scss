@@ -13,9 +13,6 @@
 }
 
 #header-bottom-left {
-    display: table;
-    margin: 0 auto;
-
     #header-img-a {
         left: 10px;
         position: absolute;
@@ -59,10 +56,8 @@
             background: url(%%redditname%%) center 0 no-repeat;
             bottom: -17px;
             height: 77px;
-            left: 0;
-            margin: 0 auto;
+            left: 110px;
             position: absolute;
-            right: 0;
             text-indent: -99999px;
             width: 160px;
         } // a
