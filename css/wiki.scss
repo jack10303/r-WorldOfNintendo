@@ -40,14 +40,14 @@
     .wiki-page-content {
         .wiki>.toc>ul {
             background: rgba($white, 0.7);
-            border: $border-small solid $black;
+            border: $border-main solid $black;
             border-radius: $border-main-rad;
             margin: 5px 0;
             outline: none;
             padding: 10px;
 
             ul {
-                border-left: $border-small solid $black;
+                border-left: $border-main solid $black;
             }
         } // .wiki>.toc>ul
     } // .wiki-page-content
