@@ -1,4 +1,9 @@
-// BODY
+// BODY + RANDOM STUFF
 body {
-    background: url(%%bg%%) center center; // I realize this may end up being the only thing in this file but I wasn't sure where to put it from an organization standpoint. Will change later I'm sure.
+    background: url(%%bg%%) center center;
+
+    .md hr {
+        background: $black;
+        height: 1px;
+    }
 }

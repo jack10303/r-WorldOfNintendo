@@ -10,26 +10,30 @@
         margin: 5px 0;
         outline: none;
         padding: 10px;
-    }
+    } // #search input[type=text], .sidecontentbox .content
 
     .spacer,
     .titlebox form.toggle {
         background: none;
-    }
+    } // .spacer, .titlebox form.toggle
+
+    .titlebox .bottom {
+        border: 0 none;
+    } // .titlebox .bottom
 
     // hide X subscribers, X users here
     .subscribers .word,
     .users-online .word {
         display: none;
-    }
+    } // .subscribers .word, .users-online .word
 
     // show custom X subscribers
     .subscribers .number::after {
         content: ' collectors';
-    }
+    } // .subscribers .number::after
 
     // show custom X users here
     .users-online .number::after {
         content: ' people looking for 4" Link';
-    }
+    } // .users-online .number::after
 } // .side
