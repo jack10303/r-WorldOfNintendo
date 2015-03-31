@@ -1,0 +1,45 @@
+// USER FLAIR
+.flairselector .customizer {
+    display: none !important;
+}
+
+.flair {
+    background: url(%%sprites%%) -99999px -99999px no-repeat;
+    background-size: 244px 30px;
+    border: 0 none;
+    height: 30px;
+    padding: 0;
+    width: 35px;
+}
+
+.link .flair {
+    float: left;
+}
+
+.flair-Mario {
+    background-position: 0 0;
+}
+
+.flair-FireMario {
+    background-position: -35px 0;
+}
+
+.flair-Samus {
+    background-position: -70px 0;
+}
+
+.flair-DK {
+    background-position: -105px 0;
+}
+
+.flair-Link {
+    background-position: -140px 0;
+}
+
+.flair-RedPikmin {
+    background-position: -175px 0;
+}
+
+.flair-Wario {
+    background-position: -210px 0;
+}
