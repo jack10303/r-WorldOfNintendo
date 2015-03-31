@@ -5,9 +5,13 @@ html.res {
         border-radius: $border-main-rad;
         margin-left: 20px;
 
-        &:before { // a special something for those using RES
-            background-image: url(%%nav-wario%%);
+        &:before { // wario
+            background-position: -780px 40px;
         } // &:before
+
+        &:hover:before {
+            background-position: -780px 10px;
+        } // &:hover:before
     } // #header-bottom-left .tabmenu li #viewImagesButton
 
     #header-bottom-right {

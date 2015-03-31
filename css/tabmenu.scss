@@ -7,43 +7,69 @@
     li {
         margin: 0;
 
-        &:nth-child(1) { // hot
+        &:nth-child(1) { // hot - fire mario
             a {
                 border-left: $border-main solid $black;
                 border-radius: $border-main-rad 0 0 $border-main-rad;
-            } // a
 
-            a:before {
-                background-image: url(%%nav-firemario%%);
-            } // &:before
+                &:before {
+                    background-position: -130px 40px;
+                } // &:before
+
+                &:hover:before {
+                    background-position: -130px 10px;
+                } // &:hover:before
+            } // a
         } // &:nth-child(1)
 
-        &:nth-child(2) { // new
-            a:before {
-                background-image: url(%%nav-samus%%);
-            } // a:before
+        &:nth-child(2) { // new - samus
+            a {
+                &:before {
+                    background-position: -260px 40px;
+                } // &:before
+
+                &:hover:before {
+                    background-position: -260px 10px;
+                } // &:hover:before
+            } // a
         } // &:nth-child(2)
 
-        &:nth-child(3) { // rising
-            a:before {
-                background-image: url(%%nav-dk%%);
-            } // a:before
+        &:nth-child(3) { // rising - dk
+            a {
+                &:before {
+                    background-position: -390px 40px;
+                } // &:before
+
+                &:hover:before {
+                    background-position: -390px 10px;
+                } // &:hover:before
+            } // a
         } // &:nth-child(3)
 
-        &:nth-child(5) { // top
-            a:before {
-                background-image: url(%%nav-link%%);
-            } // a:before
+        &:nth-child(5) { // top - link
+            a {
+                &:before {
+                    background-position: -520px 40px;
+                } // &:before
+
+                &:hover:before {
+                    background-position: -520px 10px;
+                } // &:hover:before
+            } // a
         } // &:nth-child(5)
 
-        &:nth-child(7) { // wiki
+        &:nth-child(7) { // wiki - pikmin
             a {
                 border-radius: 0 $border-main-rad $border-main-rad 0;
-            } // a
 
-            a:before {
-                background-image: url(%%nav-redpikmin%%);
-            } // a:before
+                &:before {
+                    background-position: -650px 40px;
+                } // &:before
+
+                &:hover:before {
+                    background-position: -650px 10px;
+                } // &:hover:before
+            } // a
         } // &:nth-child(7)
 
         &:nth-child(4), // controversial
@@ -73,24 +99,21 @@
             transition: color 1s;
 
             &:before {
-                background-position: center 40px;
-                background-repeat: no-repeat;
+                background: url(%%sprites%%) 0 0 no-repeat;
                 content: '';
                 height: $menu-psuedo-ht;
                 left: 0;
+                margin: 0 auto;
                 position: absolute;
+                right: 0;
                 top: -$menu-psuedo-ht - $border-main;
                 transition: background 1s;
-                width: 100%;
+                width: 130px;
             } // &:before
 
             &:hover {
                 background: url(%%bg%%);
                 color: $red;
-
-                &:before {
-                    background-position: center 10px;
-                } // &:before
             } // &:hover
         } // a
     } // li
