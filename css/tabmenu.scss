@@ -13,11 +13,11 @@
                 border-radius: $border-main-rad 0 0 $border-main-rad;
 
                 &:before {
-                    background-position: -130px 40px;
+                    background-position: -910px 40px;
                 } // &:before
 
                 &:hover:before {
-                    background-position: -130px 10px;
+                    background-position: -910px 10px;
                 } // &:hover:before
             } // a
         } // &:nth-child(1)
@@ -25,11 +25,11 @@
         &:nth-child(2) { // new - samus
             a {
                 &:before {
-                    background-position: -260px 40px;
+                    background-position: -910px 40px;
                 } // &:before
 
                 &:hover:before {
-                    background-position: -260px 10px;
+                    background-position: -910px 10px;
                 } // &:hover:before
             } // a
         } // &:nth-child(2)
@@ -37,11 +37,11 @@
         &:nth-child(3) { // rising - dk
             a {
                 &:before {
-                    background-position: -390px 40px;
+                    background-position: -910px 40px;
                 } // &:before
 
                 &:hover:before {
-                    background-position: -390px 10px;
+                    background-position: -910px 10px;
                 } // &:hover:before
             } // a
         } // &:nth-child(3)
@@ -49,11 +49,11 @@
         &:nth-child(5) { // top - link
             a {
                 &:before {
-                    background-position: -520px 40px;
+                    background-position: -910px 40px;
                 } // &:before
 
                 &:hover:before {
-                    background-position: -520px 10px;
+                    background-position: -910px 10px;
                 } // &:hover:before
             } // a
         } // &:nth-child(5)
@@ -63,11 +63,11 @@
                 border-radius: 0 $border-main-rad $border-main-rad 0;
 
                 &:before {
-                    background-position: -650px 40px;
+                    background-position: -910px 40px;
                 } // &:before
 
                 &:hover:before {
-                    background-position: -650px 10px;
+                    background-position: -910px 10px;
                 } // &:hover:before
             } // a
         } // &:nth-child(7)
