@@ -5,7 +5,7 @@
 
 .flair {
     background: url(%%sprites%%) -99999px -99999px no-repeat;
-    background-size: 244px 30px;
+    background-size: 279px 30px;
     border: 0 none;
     height: 30px;
     padding: 0;
@@ -42,4 +42,8 @@
 
 .flair-Wario {
     background-position: -210px 0;
+}
+
+.flair-Waluigi {
+    background-position: -245px 0;
 }
