@@ -4,6 +4,7 @@ The CSS and images used on [/r/WorldOfNintendo](http://reddit.com/r/WorldOfNinte
 This repo uses [CodeKit](https://incident57.com/codekit/) to manage some SASS things for me (mostly Autoprefixer), but you can use whatever you like!
 
 ##To Do
+* make "WORLD OF" in logo more bold
 * restrict `announcements` and `giveaways` link flair via [this helpful link](http://www.reddit.com/r/modhelp/comments/1r6q9s/i_dont_understand_link_flair_user_can_edit/cdk7m8o)
 * make colored link flair
 * stylize headings and content
