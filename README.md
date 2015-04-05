@@ -5,9 +5,9 @@ This repo uses [CodeKit](https://incident57.com/codekit/) to manage some SASS th
 
 ##To Do
 * make colored link flair
-* stylize headings and content
-* add more user flair! (retailer flair, toad, bowser, yoshi, etc etc)
 * add special flair for mods so that mods can still pick which flair they want instead of Mario
+* add more user flair! (retailer flair, toad, bowser, yoshi, etc etc)
+* stylize headings and content
 * add other assets to sprite so that there are less images?
 * create some `@extends` and `$vars` for stuff
 * consider replacing the background image with a scanned version of the actual box background because it looks nicer
