@@ -1,0 +1,8 @@
+// LINK FLAIR
+
+body:not(.moderator) .flairselector {
+    .linkflair-Announcement,
+    .linkflair-Giveaway {
+        display: none;
+    }
+}
