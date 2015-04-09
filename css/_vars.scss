@@ -14,5 +14,16 @@ $border-main: 1px;
 $border-main-rad: 20px;
 $border-thick: 3px;
 
+// SPRITES
+$sprite-nav-num: 8; // number of nav sprites (first row)
+$sprite-nav-height: 112px;
+$sprite-nav-width: 130px;
+
+$sprite-uflair-height: 30px;
+$sprite-uflair-width: 35px;
+
+$sprite-uflair-bsize-height: $sprite-uflair-height;
+$sprite-uflair-bsize-width: $sprite-nav-num * $sprite-uflair-width;
+
 // OTHER
 $menu-psuedo-ht: 120px; // the height of the pseudo element on the tabmenu

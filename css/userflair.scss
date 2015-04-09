@@ -5,11 +5,11 @@
 
 .flair {
     background: url(%%sprites%%) -99999px -99999px no-repeat;
-    background-size: 279px 30px;
+    background-size: $sprite-uflair-bsize-width $sprite-uflair-bsize-height;
     border: 0 none;
-    height: 30px;
+    height: $sprite-uflair-height;
     padding: 0;
-    width: 35px;
+    width: $sprite-uflair-width;
 } // .flair
 
 .link .flair {
@@ -21,29 +21,29 @@
 }
 
 .flair-FireMario {
-    background-position: -35px 0;
+    background-position: -$sprite-uflair-width*1 0;
 }
 
 .flair-Samus {
-    background-position: -70px 0;
+    background-position: -$sprite-uflair-width*2 0;
 }
 
 .flair-DK {
-    background-position: -105px 0;
+    background-position: -$sprite-uflair-width*3 0;
 }
 
 .flair-Link {
-    background-position: -140px 0;
+    background-position: -$sprite-uflair-width*4 0;
 }
 
 .flair-RedPikmin {
-    background-position: -175px 0;
+    background-position: -$sprite-uflair-width*5 0;
 }
 
 .flair-Wario {
-    background-position: -210px 0;
+    background-position: -$sprite-uflair-width*6 0;
 }
 
 .flair-Waluigi {
-    background-position: -245px 0;
+    background-position: -$sprite-uflair-width*7 0;
 }
