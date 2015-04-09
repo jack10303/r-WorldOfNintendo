@@ -10,7 +10,7 @@
 #sr-header-area {
     border: 0 none;
     border-bottom: $border-thick solid $beige;
-}
+} // #sr-header-area
 
 #header-bottom-left {
     display: table;
@@ -45,7 +45,7 @@
 
         &:hover:before {
             background-position: center 0;
-        }
+        } // &:hover:before
     } // #header-img-a
 
     #header-img {

@@ -8,7 +8,7 @@
         border-radius: $border-main-rad;
         padding: 10px;
     } // .thing
-}
+} // .linklisting
 
 .new-comment .usertext-body,
 .comment .usertext-body,
@@ -18,18 +18,18 @@
     border-radius: $border-main-rad;
     margin: 5px 0;
     padding: 10px;
-}
+} // .usertext-body
 
 .new-comment .usertext-body {
     background: rgba($yellow, 0.7);
-}
+} // .new-comment .usertext-body
 
 .link .usertext-body .md {
     background: none;
     border: 0 none;
-}
+} // .link .usertext-body .md
 
 .comment .child,
 .comment .showreplies {
     border-left: 1px solid $black;
-}
+} // .comment .child .comment .showreplies

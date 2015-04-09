@@ -24,11 +24,11 @@
             &:hover {
                 background: transparent;
                 color: $red;
-            }
+            } // &:hover
 
             &:last-child {
                 border-radius: 0 $border-main-rad $border-main-rad 0;
-            }
+            } // &:last-child
         } // .wikiaction
 
         .wikiaction-current {
@@ -48,7 +48,7 @@
 
             ul {
                 border-left: $border-main solid $black;
-            }
+            } // ul
         } // .wiki>.toc>ul
     } // .wiki-page-content
 } // .wiki-page

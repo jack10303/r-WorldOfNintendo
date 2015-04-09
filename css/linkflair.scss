@@ -1,8 +1,107 @@
 // LINK FLAIR
+body:not(.moderator) .flairselector .linkflair[class$='-mods'] {
+    display: none; // Hide some link flair from non-mods! Link flair css name must end with "-mods"
+} // body:not(.moderator) .flairselector .linkflair[class$='-mods']
 
-body:not(.moderator) .flairselector {
-    .linkflair-Announcement,
-    .linkflair-Giveaway {
+.linkflair,
+.flairselector .linkflair {
+    &[class*='linkflair-'] .linkflairlabel {
+        background: $white;
+        border: $border-main solid $black;
+        border-radius: $border-main-rad;
+        color: $black;
+        font-weight: bold;
+        line-height: 1.6em;
+        padding: 2px 6px;
+    } // .linkflairlabel
+
+    &[class*='linkflair-Collection'] .linkflairlabel {
+        background: $yellow;
+    } // Collection
+
+    &[class*='linkflair-Custom'] .linkflairlabel {
+        background: $green;
+        color: $white;
+    } // Custom
+
+    &[class*='linkflair-Discussion'] .linkflairlabel {
+        background: $beige;
+    } // Discussion
+
+    &[class*='linkflair-News'] .linkflairlabel {
+        background: $black;
+        color: $white;
+    } // News
+
+    &[class*='linkflair-Question'] .linkflairlabel {
+        background: $purple;
+        color: $white;
+    } // Question
+
+    &[class*='linkflair-PSA'] .linkflairlabel {
+        background: $white;
+        border-color: $red;
+        color: $red;
+    } // PSA
+
+    &[class*='linkflair-Sale'] .linkflairlabel {
+        background: $pink;
+    } // Sale
+
+    &[class*='linkflair-Tracking'] .linkflairlabel {
+        background: $blue;
+        color: $white;
+    } // Tracking
+
+    &[class*='linkflair-Announcement'] .linkflairlabel,
+    &[class*='linkflair-Giveaway'] .linkflairlabel {
+        background: $red;
+        color: $white;
+    } // Announcement, Giveaway
+} // .linkflair, .flairselector .linkflair
+
+.flairselector {
+    .flairselection a.title,
+    .flairoptionpane .linkflair a.title {
         display: none;
-    }
-}
+    } // .linkflair a.title
+
+    .flairoptionpane .flairsample-left {
+        line-height: 1em;
+        margin: 0 0 2px 0;
+        padding: 2px;
+        text-align: left !important; // important here because reddit uses important :(
+    } // .flairsample-left
+} // .flairselector
+
+// Select Button
+.link .flairselectbtn {
+    font-size: 0;
+
+    &:before {
+        font-size: 10px;
+    } // &:before
+} // .link .flairselectbtn
+
+// Posts are given a class name of .linkflair when flair is set
+.link.linkflair {
+    .flairselectbtn {
+        &:before {
+            content: 'Change link flair';
+        } // &:before
+    } // .flairselectbtn
+} // .link:not(.linkflair)
+
+// Posts do not have the class name when flair is not set - we should remind them to set it
+.link:not(.linkflair) {
+    .flairselectbtn {
+        &:before {
+            background-color: $yellow;
+            border: $border-main solid $black;
+            border-radius: $border-main-rad;
+            color: $black;
+            content: 'Set link flair';
+            padding: 2px 6px;
+        } // &:before
+    } // .flairselectbtn
+} // .link:not(.linkflair)

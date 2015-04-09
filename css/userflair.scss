@@ -1,7 +1,7 @@
 // USER FLAIR
 .flairselector .customizer {
     display: none !important;
-}
+} // .flairselector .customizer
 
 .flair {
     background: url(%%sprites%%) -99999px -99999px no-repeat;
@@ -10,11 +10,11 @@
     height: 30px;
     padding: 0;
     width: 35px;
-}
+} // .flair
 
 .link .flair {
     float: left;
-}
+} // .link .flair
 
 .flair-Mario {
     background-position: 0 0;
