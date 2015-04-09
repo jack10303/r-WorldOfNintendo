@@ -20,7 +20,7 @@ body:not(.moderator) .flairselector .linkflair[class$='-mods'] {
     } // Collection
 
     &[class*='linkflair-Custom'] .linkflairlabel {
-        background: $green;
+        background: $blue;
         color: $white;
     } // Custom
 
@@ -49,7 +49,7 @@ body:not(.moderator) .flairselector .linkflair[class$='-mods'] {
     } // Sale
 
     &[class*='linkflair-Tracking'] .linkflairlabel {
-        background: $blue;
+        background: $green;
         color: $white;
     } // Tracking
 
