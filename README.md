@@ -4,7 +4,6 @@ The CSS and images used on [/r/WorldOfNintendo](http://reddit.com/r/WorldOfNinte
 This repo uses [CodeKit](https://incident57.com/codekit/) to manage some SASS things for me (mostly Autoprefixer), but you can use whatever you like!
 
 ##To Do
-* add special flair for mods so that mods can still pick which flair they want instead of Mario
 * stylize headings and content
 * stylize the prev/next buttons
 * stylize the user flair selection element(s)

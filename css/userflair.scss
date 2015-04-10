@@ -62,22 +62,42 @@
 
     // Retailer Flair
     &[class*="flair-tru"] {
-        background-position: 0 $sprite-uflair-small-y-pos;
-    }
-    &[class*="flair-target"] {
         background-position: -$sprite-uflair-width*1 $sprite-uflair-small-y-pos;
     }
-    &[class*="flair-walmart"] {
+    &[class*="flair-target"] {
         background-position: -$sprite-uflair-width*2 $sprite-uflair-small-y-pos;
     }
-    &[class*="flair-walgreens"] {
+    &[class*="flair-walmart"] {
         background-position: -$sprite-uflair-width*3 $sprite-uflair-small-y-pos;
     }
-    &[class*="flair-bam"] {
+    &[class*="flair-walgreens"] {
         background-position: -$sprite-uflair-width*4 $sprite-uflair-small-y-pos;
+    }
+    &[class*="flair-bam"] {
+        background-position: -$sprite-uflair-width*5 $sprite-uflair-small-y-pos;
     }
 } // .flair
 
 .link .flair {
     float: left;
 } // .link .flair
+
+// MOD FLAIR
+a.author {
+    &[href$="user/19steind"],
+    &[href$="user/HelixSapphire"],
+    &[href$="user/FlapSnapple"],
+    &[href$="user/WTF_Banter_GTFO"],
+    &[href$="user/AutoModerator"],
+    &[href$="user/Usermane01"],
+    &[href$="user/erikwoods"] {
+        &:after {
+            background: url(%%sprites%%) 0 $sprite-uflair-small-y-pos no-repeat;
+            content: '';
+            display: inline-block;
+            height: $sprite-uflair-height;
+            margin: 2px 5px 0 5px;
+            width: $sprite-uflair-width;
+        } // &:after
+    } // usernames
+} // a.author
