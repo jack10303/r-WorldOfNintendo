@@ -60,6 +60,16 @@
         background-position: -$sprite-uflair-width*13 0;
     }
 
+    // Mod Flair
+    &[class*="-mod"] + a.author:after {
+        background: url(%%sprites%%) 0 $sprite-uflair-small-y-pos no-repeat;
+        content: '';
+        display: inline-block;
+        height: $sprite-uflair-height;
+        margin: 2px 5px 0 5px;
+        width: $sprite-uflair-width;
+    }
+
     // Retailer Flair
     &[class*="flair-tru"] {
         background-position: -$sprite-uflair-width*1 $sprite-uflair-small-y-pos;
@@ -81,23 +91,3 @@
 .link .flair {
     float: left;
 } // .link .flair
-
-// MOD FLAIR
-a.author {
-    &[href$="user/19steind"],
-    &[href$="user/HelixSapphire"],
-    &[href$="user/FlapSnapple"],
-    &[href$="user/WTF_Banter_GTFO"],
-    &[href$="user/AutoModerator"],
-    &[href$="user/Usermane01"],
-    &[href$="user/erikwoods"] {
-        &:after {
-            background: url(%%sprites%%) 0 $sprite-uflair-small-y-pos no-repeat;
-            content: '';
-            display: inline-block;
-            height: $sprite-uflair-height;
-            margin: 2px 5px 0 5px;
-            width: $sprite-uflair-width;
-        } // &:after
-    } // usernames
-} // a.author
