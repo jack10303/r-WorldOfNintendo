@@ -10,64 +10,74 @@
     height: $sprite-uflair-height;
     padding: 0;
     width: $sprite-uflair-width;
+
+    // Flair Modifiers - I'm using attribute selectors for user flair so that I can easily have modifiers appended to flair class names
+    &[class*="-small"] {
+        background-size: inherit; // reset background size because small flairs are 100%
+    } // &[class$="-small"]
+
+    // Public Flair
+    &[class*="flair-Mario"] {
+        background-position: 0 0;
+    }
+    &[class*="flair-FireMario"] {
+        background-position: -$sprite-uflair-width*1 0;
+    }
+    &[class*="flair-Samus"] {
+        background-position: -$sprite-uflair-width*2 0;
+    }
+    &[class*="flair-DK"] {
+        background-position: -$sprite-uflair-width*3 0;
+    }
+    &[class*="flair-Link"] {
+        background-position: -$sprite-uflair-width*4 0;
+    }
+    &[class*="flair-RedPikmin"] {
+        background-position: -$sprite-uflair-width*5 0;
+    }
+    &[class*="flair-Wario"] {
+        background-position: -$sprite-uflair-width*6 0;
+    }
+    &[class*="flair-Waluigi"] {
+        background-position: -$sprite-uflair-width*7 0;
+    }
+    &[class*="flair-Bowser"] {
+        background-position: -$sprite-uflair-width*8 0;
+    }
+    &[class*="flair-Toad"] {
+        background-position: -$sprite-uflair-width*9 0;
+    }
+    &[class*="flair-Diddy"] {
+        background-position: -$sprite-uflair-width*10 0;
+    }
+    &[class*="flair-Luigi"] {
+        background-position: -$sprite-uflair-width*11 0;
+    }
+    &[class*="flair-ToonLink"] {
+        background-position: -$sprite-uflair-width*12 0;
+    }
+    &[class*="flair-Yoshi"] {
+        background-position: -$sprite-uflair-width*13 0;
+    }
+
+    // Retailer Flair
+    &[class*="flair-tru"] {
+        background-position: 0 $sprite-uflair-small-y-pos;
+    }
+    &[class*="flair-target"] {
+        background-position: -$sprite-uflair-width*1 $sprite-uflair-small-y-pos;
+    }
+    &[class*="flair-walmart"] {
+        background-position: -$sprite-uflair-width*2 $sprite-uflair-small-y-pos;
+    }
+    &[class*="flair-walgreens"] {
+        background-position: -$sprite-uflair-width*3 $sprite-uflair-small-y-pos;
+    }
+    &[class*="flair-bam"] {
+        background-position: -$sprite-uflair-width*4 $sprite-uflair-small-y-pos;
+    }
 } // .flair
 
 .link .flair {
     float: left;
 } // .link .flair
-
-.flair-Mario {
-    background-position: 0 0;
-}
-
-.flair-FireMario {
-    background-position: -$sprite-uflair-width*1 0;
-}
-
-.flair-Samus {
-    background-position: -$sprite-uflair-width*2 0;
-}
-
-.flair-DK {
-    background-position: -$sprite-uflair-width*3 0;
-}
-
-.flair-Link {
-    background-position: -$sprite-uflair-width*4 0;
-}
-
-.flair-RedPikmin {
-    background-position: -$sprite-uflair-width*5 0;
-}
-
-.flair-Wario {
-    background-position: -$sprite-uflair-width*6 0;
-}
-
-.flair-Waluigi {
-    background-position: -$sprite-uflair-width*7 0;
-}
-
-.flair-Bowser {
-    background-position: -$sprite-uflair-width*8 0;
-}
-
-.flair-Toad {
-    background-position: -$sprite-uflair-width*9 0;
-}
-
-.flair-Diddy {
-    background-position: -$sprite-uflair-width*10 0;
-}
-
-.flair-Luigi {
-    background-position: -$sprite-uflair-width*11 0;
-}
-
-.flair-ToonLink {
-    background-position: -$sprite-uflair-width*12 0;
-}
-
-.flair-Yoshi {
-    background-position: -$sprite-uflair-width*13 0;
-}
