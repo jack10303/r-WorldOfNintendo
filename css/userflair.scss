@@ -8,6 +8,7 @@
     border: 0 none;
     height: $sprite-uflair-height;
     padding: 0;
+    position: relative;
     width: $sprite-uflair-width;
 
     // Public Character Flair
@@ -57,6 +58,33 @@
     // Mod-Assigned Special Top Secret Hidden Character Flair
     &[class*="flair-Metroid"] {
         background-position: -$sprite-uflair-width*13 $sprite-row2-y;
+    }
+
+    // Mod-Assigned Metroidification
+    &[class*="-met"] {
+        margin-top: 12px;
+
+        &:after {
+            background: url(%%sprites%%) -$sprite-uflair-width*13 $sprite-row2-y no-repeat;
+            content: '';
+            height: $sprite-uflair-height;
+            left: 0;
+            position: absolute;
+            top: -12px;
+            width: $sprite-uflair-width;
+        }
+    }
+    &[class*="RedPikmin-met"] { // Pikmin are special since they're so small
+        margin-top: 0;
+
+        &:after { // don't ask me how I got this these values - it's complicated
+            background-position: -226px -56px;
+            background-size: 388px 86px;
+            height: 15px;
+            left: 9px;
+            top: 10px;
+            width: 17px;
+        }
     }
 
     // Mod-Assigned Retailer Flair
