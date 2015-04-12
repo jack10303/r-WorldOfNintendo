@@ -13,11 +13,11 @@
                 border-radius: $border-main-rad 0 0 $border-main-rad;
 
                 &:before {
-                    background-position: -$sprite-nav-width*1 40px;
+                    background-position: 0 40px;
                 } // &:before
 
                 &:hover:before {
-                    background-position: -$sprite-nav-width*1 10px;
+                    background-position: 0 10px;
                 } // &:hover:before
             } // a
         } // &:nth-child(1)
@@ -25,11 +25,11 @@
         &:nth-child(2) { // new - samus
             a {
                 &:before {
-                    background-position: -$sprite-nav-width*2 40px;
+                    background-position: -$sprite-row1-width*1 40px;
                 } // &:before
 
                 &:hover:before {
-                    background-position: -$sprite-nav-width*2 10px;
+                    background-position: -$sprite-row1-width*1 10px;
                 } // &:hover:before
             } // a
         } // &:nth-child(2)
@@ -37,11 +37,11 @@
         &:nth-child(3) { // rising - dk
             a {
                 &:before {
-                    background-position: -$sprite-nav-width*3 40px;
+                    background-position: -$sprite-row1-width*2 40px;
                 } // &:before
 
                 &:hover:before {
-                    background-position: -$sprite-nav-width*3 10px;
+                    background-position: -$sprite-row1-width*2 10px;
                 } // &:hover:before
             } // a
         } // &:nth-child(3)
@@ -49,11 +49,11 @@
         &:nth-child(5) { // top - link
             a {
                 &:before {
-                    background-position: -$sprite-nav-width*4 40px;
+                    background-position: -$sprite-row1-width*3 40px;
                 } // &:before
 
                 &:hover:before {
-                    background-position: -$sprite-nav-width*4 10px;
+                    background-position: -$sprite-row1-width*3 10px;
                 } // &:hover:before
             } // a
         } // &:nth-child(5)
@@ -63,11 +63,11 @@
                 border-radius: 0 $border-main-rad $border-main-rad 0;
 
                 &:before {
-                    background-position: -$sprite-nav-width*5 40px;
+                    background-position: -$sprite-row1-width*4 40px;
                 } // &:before
 
                 &:hover:before {
-                    background-position: -$sprite-nav-width*5 10px;
+                    background-position: -$sprite-row1-width*4 10px;
                 } // &:hover:before
             } // a
         } // &:nth-child(7)
@@ -108,7 +108,7 @@
                 right: 0;
                 top: -$menu-psuedo-ht - $border-main;
                 transition: background 1s;
-                width: $sprite-nav-width;
+                width: $sprite-row1-width;
             } // &:before
 
             &:hover {

@@ -1,80 +1,74 @@
-// USER FLAIR
+// USER FLAIR - I'm using attribute selectors for user flair so that I can easily have modifiers appended to flair class names
 .flairselector .customizer {
     display: none !important;
 } // .flairselector .customizer
 
 .flair {
     background: url(%%sprites%%) -99999px -99999px no-repeat;
-    background-size: $sprite-uflair-bsize-width $sprite-uflair-bsize-height;
     border: 0 none;
     height: $sprite-uflair-height;
     padding: 0;
     width: $sprite-uflair-width;
 
-    // Flair Modifiers - I'm using attribute selectors for user flair so that I can easily have modifiers appended to flair class names
-    &[class*="-small"] {
-        background-size: inherit; // reset background size because small flairs are 100%
-    } // &[class$="-small"]
-
-    // Public Flair
+    // Public Character Flair
     &[class*="flair-Mario"] {
-        background-position: 0 0;
+        background-position: 0 $sprite-row2-y;
     }
     &[class*="flair-FireMario"] {
-        background-position: -$sprite-uflair-width*1 0;
-    }
-    &[class*="flair-Samus"] {
-        background-position: -$sprite-uflair-width*2 0;
-    }
-    &[class*="flair-DK"] {
-        background-position: -$sprite-uflair-width*3 0;
-    }
-    &[class*="flair-Link"] {
-        background-position: -$sprite-uflair-width*4 0;
-    }
-    &[class*="flair-RedPikmin"] {
-        background-position: -$sprite-uflair-width*5 0;
-    }
-    &[class*="flair-Wario"] {
-        background-position: -$sprite-uflair-width*6 0;
-    }
-    &[class*="flair-Waluigi"] {
-        background-position: -$sprite-uflair-width*7 0;
-    }
-    &[class*="flair-Bowser"] {
-        background-position: -$sprite-uflair-width*8 0;
-    }
-    &[class*="flair-Toad"] {
-        background-position: -$sprite-uflair-width*9 0;
-    }
-    &[class*="flair-Diddy"] {
-        background-position: -$sprite-uflair-width*10 0;
+        background-position: -$sprite-uflair-width*1 $sprite-row2-y;
     }
     &[class*="flair-Luigi"] {
-        background-position: -$sprite-uflair-width*11 0;
+        background-position: -$sprite-uflair-width*2 $sprite-row2-y;
     }
-    &[class*="flair-ToonLink"] {
-        background-position: -$sprite-uflair-width*12 0;
+    &[class*="flair-Toad"] {
+        background-position: -$sprite-uflair-width*3 $sprite-row2-y;
     }
     &[class*="flair-Yoshi"] {
-        background-position: -$sprite-uflair-width*13 0;
+        background-position: -$sprite-uflair-width*4 $sprite-row2-y;
+    }
+    &[class*="flair-Bowser"] {
+        background-position: -$sprite-uflair-width*5 $sprite-row2-y;
+    }
+    &[class*="flair-Wario"] {
+        background-position: -$sprite-uflair-width*6 $sprite-row2-y;
+    }
+    &[class*="flair-Waluigi"] {
+        background-position: -$sprite-uflair-width*7 $sprite-row2-y;
+    }
+    &[class*="flair-DK"] {
+        background-position: -$sprite-uflair-width*8 $sprite-row2-y;
+    }
+    &[class*="flair-Diddy"] {
+        background-position: -$sprite-uflair-width*9 $sprite-row2-y;
+    }
+    &[class*="flair-Link"] {
+        background-position: -$sprite-uflair-width*10 $sprite-row2-y;
+    }
+    &[class*="flair-ToonLink"] {
+        background-position: -$sprite-uflair-width*11 $sprite-row2-y;
+    }
+    &[class*="flair-Samus"] {
+        background-position: -$sprite-uflair-width*12 $sprite-row2-y;
+    }
+    &[class*="flair-RedPikmin"] {
+        background-position: -$sprite-uflair-width*13 $sprite-row2-y;
     }
 
-    // Retailer Flair
+    // Mod-Assigned Retailer Flair
     &[class*="flair-tru"] {
-        background-position: -$sprite-uflair-width*1 $sprite-uflair-small-y-pos;
+        background-position: -$sprite-uflair-width*1 $sprite-row3-y;
     }
     &[class*="flair-target"] {
-        background-position: -$sprite-uflair-width*2 $sprite-uflair-small-y-pos;
+        background-position: -$sprite-uflair-width*2 $sprite-row3-y;
     }
     &[class*="flair-walmart"] {
-        background-position: -$sprite-uflair-width*3 $sprite-uflair-small-y-pos;
+        background-position: -$sprite-uflair-width*3 $sprite-row3-y;
     }
     &[class*="flair-walgreens"] {
-        background-position: -$sprite-uflair-width*4 $sprite-uflair-small-y-pos;
+        background-position: -$sprite-uflair-width*4 $sprite-row3-y;
     }
     &[class*="flair-bam"] {
-        background-position: -$sprite-uflair-width*5 $sprite-uflair-small-y-pos;
+        background-position: -$sprite-uflair-width*5 $sprite-row3-y;
     }
 } // .flair
 
@@ -92,7 +86,7 @@ a.author {
     &[href$="user/Usermane01"],
     &[href$="user/erikwoods"] {
         &:after {
-            background: url(%%sprites%%) 0 $sprite-uflair-small-y-pos no-repeat;
+            background: url(%%sprites%%) 0 $sprite-row3-y no-repeat;
             content: '';
             display: inline-block;
             height: $sprite-uflair-height;

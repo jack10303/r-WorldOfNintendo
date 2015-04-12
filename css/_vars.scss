@@ -15,19 +15,18 @@ $border-main-rad: 20px;
 $border-thick: 3px;
 
 // SPRITES - first row
-$sprite-nav-num: 14; // number of nav sprites
-
-$sprite-nav-height: 112px; // height of each nav sprite - not currently in use
-$sprite-nav-width: 130px; // width of each nav sprite
-
-$sprite-uflair-height: 30px; // height of user flair
-$sprite-uflair-width: 35px; // width of user flair
-
-$sprite-uflair-bsize-height: 38px; // height of sprites when resized - need to find a formula to automate this number
-$sprite-uflair-bsize-width: $sprite-nav-num*$sprite-uflair-width; // width of sprites when resized
+$sprite-row1-height: 112px; // height of each sprite in row 1 - not currently in use
+$sprite-row1-width: 130px; // width of each sprite in row 1
 
 // SPRITES - second row
-$sprite-uflair-small-y-pos: -112px; // y coord of small user flair
+$sprite-row2-y: -112px; // y coord of row 2
+
+// SPRITES - third row
+$sprite-row3-y: -142px; // y coord of row 3
+
+// SPRITES - other stuff
+$sprite-uflair-height: 30px; // height of user flair
+$sprite-uflair-width: 35px; // width of user flair
 
 // OTHER
 $menu-psuedo-ht: 120px; // the height of the pseudo element on the tabmenu

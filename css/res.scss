@@ -6,11 +6,11 @@ html.res {
         margin-left: 20px;
 
         &:before { // wario
-            background-position: -$sprite-nav-width*6 40px;
+            background-position: -$sprite-row1-width*5 40px;
         } // &:before
 
         &:hover:before {
-            background-position: -$sprite-nav-width*6 10px;
+            background-position: -$sprite-row1-width*5 10px;
         } // &:hover:before
     } // #header-bottom-left .tabmenu li #viewImagesButton
 
