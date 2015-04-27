@@ -113,11 +113,12 @@
 a.author {
     &[href$="user/19steind"],
     &[href$="user/HelixSapphire"],
-    &[href$="user/FlapSnapple"],
-    &[href$="user/WTF_Banter_GTFO"],
     &[href$="user/AutoModerator"],
-    &[href$="user/Usermane01"],
-    &[href$="user/erikwoods"] {
+    &[href$="user/erikwoods"],
+    &[href$="user/captainvoltaic"],
+    &[href$="user/amiibocustomsrus"],
+    &[href$="user/Goldmanatee"],
+    &[href$="user/TheCollector1999"] {
         &:after {
             background: url(%%sprites%%) 0 $sprite-row3-y no-repeat;
             content: '';
