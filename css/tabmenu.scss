@@ -10,7 +10,6 @@
         &:nth-child(1) { // hot - fire mario
             a {
                 border-left: $border-main solid $black;
-                border-radius: $border-main-rad 0 0 $border-main-rad;
 
                 &:before {
                     background-position: 0 40px;
@@ -60,8 +59,6 @@
 
         &:nth-child(7) { // wiki - pikmin
             a {
-                border-radius: 0 $border-main-rad $border-main-rad 0;
-
                 &:before {
                     background-position: -$sprite-row1-width*4 40px;
                 } // &:before
@@ -89,9 +86,10 @@
         a {
             background: $white;
             border: $border-main solid $black;
-            border-left: 0 none;
+            border-radius: $border-main-rad;
             color: $black;
             display: inline-block;
+            margin: 0 10px 0 0;
             min-width: 120px;
             padding: 5px 10px;
             position: relative;
@@ -118,14 +116,3 @@
         } // a
     } // li
 } // #header-bottom-left .tabmenu
-
-.comments-page,
-.related-page {
-    #header-bottom-left .tabmenu li {
-        &:nth-child(2) { // related
-            a {
-                border-radius: 0 $border-main-rad $border-main-rad 0;
-            } // a
-        } // &:nth-child(2)
-    } // #header-bottom-left .tabmenu li
-} // .comments-page, .related-page
