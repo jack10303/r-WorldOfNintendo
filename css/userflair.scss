@@ -51,9 +51,6 @@
     &[class*="flair-Samus"] {
         background-position: -$sprite-uflair-width*12 $sprite-row2-y;
     }
-    &[class*="flair-Metroid"] {
-        background-position: -$sprite-uflair-width*13 $sprite-row2-y;
-    }
     &[class*="flair-RedPikmin"] {
         background-position: -$sprite-uflair-width*14 $sprite-row2-y;
     }
@@ -71,6 +68,9 @@
     }
 
     // Mod-Assigned Special Top Secret Hidden Character Flair
+    &[class*="flair-Metroid"] {
+        background-position: -$sprite-uflair-width*13 $sprite-row2-y;
+    }
     &[class*="flair-Fox"] {
         background-position: -$sprite-uflair-width*15 $sprite-row2-y;
     }
