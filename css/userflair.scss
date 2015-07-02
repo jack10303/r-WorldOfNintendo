@@ -57,6 +57,18 @@
     &[class*="flair-RedPikmin"] {
         background-position: -$sprite-uflair-width*14 $sprite-row2-y;
     }
+    &[class*="flair-Cranky"] {
+        background-position: -$sprite-uflair-width*16 $sprite-row2-y;
+    }
+    &[class*="flair-Tetra"] {
+        background-position: -$sprite-uflair-width*17 $sprite-row2-y;
+    }
+    &[class*="flair-ToonGanondorf"] {
+        background-position: -$sprite-uflair-width*18 $sprite-row2-y;
+    }
+    &[class*="flair-IceLuigi"] {
+        background-position: -$sprite-uflair-width*19 $sprite-row2-y;
+    }
 
     // Mod-Assigned Special Top Secret Hidden Character Flair
     &[class*="flair-Fox"] {
