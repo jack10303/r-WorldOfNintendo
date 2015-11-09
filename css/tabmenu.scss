@@ -21,7 +21,7 @@
             } // a
         } // &:nth-child(1)
 
-        &:nth-child(2) { // new - samus
+        &:nth-child(2) { // new - link
             a {
                 &:before {
                     background-position: -$sprite-row1-width*1 40px;
@@ -33,7 +33,7 @@
             } // a
         } // &:nth-child(2)
 
-        &:nth-child(3) { // rising - dk
+        &:nth-child(3) { // rising - samus
             a {
                 &:before {
                     background-position: -$sprite-row1-width*2 40px;
@@ -45,7 +45,7 @@
             } // a
         } // &:nth-child(3)
 
-        &:nth-child(5) { // top - link
+        &:nth-child(5) { // top - fox
             a {
                 &:before {
                     background-position: -$sprite-row1-width*3 40px;
@@ -57,7 +57,7 @@
             } // a
         } // &:nth-child(5)
 
-        &:nth-child(7) { // wiki - pikmin
+        &:nth-child(7) { // wiki - olimar
             a {
                 &:before {
                     background-position: -$sprite-row1-width*4 40px;

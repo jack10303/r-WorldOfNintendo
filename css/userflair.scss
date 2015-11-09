@@ -51,28 +51,77 @@
     &[class*="flair-Samus"] {
         background-position: -$sprite-uflair-width*12 $sprite-row2-y;
     }
-    &[class*="flair-RedPikmin"] {
-        background-position: -$sprite-uflair-width*14 $sprite-row2-y;
-    }
-    &[class*="flair-Cranky"] {
-        background-position: -$sprite-uflair-width*16 $sprite-row2-y;
-    }
-    &[class*="flair-Tetra"] {
-        background-position: -$sprite-uflair-width*17 $sprite-row2-y;
-    }
-    &[class*="flair-ToonGanondorf"] {
-        background-position: -$sprite-uflair-width*18 $sprite-row2-y;
-    }
-    &[class*="flair-IceLuigi"] {
-        background-position: -$sprite-uflair-width*19 $sprite-row2-y;
-    }
-
-    // Mod-Assigned Special Top Secret Hidden Character Flair
     &[class*="flair-Metroid"] {
         background-position: -$sprite-uflair-width*13 $sprite-row2-y;
     }
-    &[class*="flair-Fox"] {
+    &[class*="flair-RedPikmin"] {
+        background-position: -$sprite-uflair-width*14 $sprite-row2-y;
+    }
+    &[class*="flair-BluePikmin"] {
         background-position: -$sprite-uflair-width*15 $sprite-row2-y;
+    }
+    &[class*="flair-YellowPikmin"] {
+        background-position: -$sprite-uflair-width*16 $sprite-row2-y;
+    }
+    &[class*="flair-Fox"] {
+        background-position: -$sprite-uflair-width*17 $sprite-row2-y;
+    }
+    &[class*="flair-Cranky"] {
+        background-position: -$sprite-uflair-width*18 $sprite-row2-y;
+    }
+    &[class*="flair-Tetra"] {
+        background-position: -$sprite-uflair-width*19 $sprite-row2-y;
+    }
+    &[class*="flair-ToonGanondorf"] {
+        background-position: -$sprite-uflair-width*20 $sprite-row2-y;
+    }
+    &[class*="flair-IceLuigi"] {
+        background-position: -$sprite-uflair-width*21 $sprite-row2-y;
+    }
+
+    &[class*="flair-Olimar"] {
+        background-position: 0 $sprite-row3-y;
+    }
+    &[class*="flair-Rover"] {
+        background-position: -$sprite-uflair-width*1 $sprite-row3-y;
+    }
+    &[class*="flair-BobOmb"] {
+        background-position: -$sprite-uflair-width*2 $sprite-row3-y;
+    }
+    &[class*="flair-Goomba"] {
+        background-position: -$sprite-uflair-width*3 $sprite-row3-y;
+    }
+    &[class*="flair-Peach"] {
+        background-position: -$sprite-uflair-width*4 $sprite-row3-y;
+    }
+    &[class*="flair-BulletBill"] {
+        background-position: -$sprite-uflair-width*5 $sprite-row3-y;
+    }
+    &[class*="flair-ShyGuy"] {
+        background-position: -$sprite-uflair-width*8 $sprite-row3-y;
+    }
+    &[class*="flair-Piranha"] {
+        background-position: -$sprite-uflair-width*9 $sprite-row3-y;
+    }
+    &[class*="flair-Mario8bit"] {
+        background-position: -$sprite-uflair-width*10 $sprite-row3-y;
+    }
+    &[class*="flair-Luigi8bit"] {
+        background-position: -$sprite-uflair-width*11 $sprite-row3-y;
+    }
+    &[class*="flair-Link8bit"] {
+        background-position: -$sprite-uflair-width*12 $sprite-row3-y;
+    }
+    &[class*="flair-DK8bit"] {
+        background-position: -$sprite-uflair-width*13 $sprite-row3-y;
+    }
+
+    // Mod-Assigned Special Top Secret Hidden Character Flair
+    &[class*="flair-GoldBill"] {
+        background-position: -$sprite-uflair-width*6 $sprite-row3-y;
+    }
+    &[class*="flair-SkullKid"] {
+        background-position: -$sprite-uflair-width*7 $sprite-row3-y;
     }
 
     // Mod-Assigned Metroidification
@@ -89,12 +138,14 @@
             width: $sprite-uflair-width;
         }
     }
-    &[class*="RedPikmin-met"] { // Pikmin are special since they're so small
+    &[class*="RedPikmin-met"],
+    &[class*="BluePikmin-met"],
+    &[class*="YellowPikmin-met"] { // Pikmin are special since they're so small
         margin-top: 0;
 
         &:after { // don't ask me how I got this these values - it's complicated
-            background-position: -226px -56px;
-            background-size: 388px 86px;
+            background-position: -232px -53px;
+            background-size: 397px 96px;
             height: 15px;
             left: 9px;
             top: 10px;
@@ -104,19 +155,19 @@
 
     // Mod-Assigned Retailer Flair
     &[class*="flair-tru"] {
-        background-position: -$sprite-uflair-width*1 $sprite-row3-y;
+        background-position: -$sprite-uflair-width*1 $sprite-row4-y;
     }
     &[class*="flair-target"] {
-        background-position: -$sprite-uflair-width*2 $sprite-row3-y;
+        background-position: -$sprite-uflair-width*2 $sprite-row4-y;
     }
     &[class*="flair-walmart"] {
-        background-position: -$sprite-uflair-width*3 $sprite-row3-y;
+        background-position: -$sprite-uflair-width*3 $sprite-row4-y;
     }
     &[class*="flair-walgreens"] {
-        background-position: -$sprite-uflair-width*4 $sprite-row3-y;
+        background-position: -$sprite-uflair-width*4 $sprite-row4-y;
     }
     &[class*="flair-bam"] {
-        background-position: -$sprite-uflair-width*5 $sprite-row3-y;
+        background-position: -$sprite-uflair-width*5 $sprite-row4-y;
     }
 } // .flair
 
@@ -127,14 +178,14 @@
 // MOD FLAIR
 a.author {
     &[href$="user/19steind"],
-    &[href$="user/HelixSapphire"],
     &[href$="user/AutoModerator"],
     &[href$="user/erikwoods"],
     &[href$="user/captainvoltaic"],
     &[href$="user/Goldmanatee"],
-    &[href$="user/TheCollector1999"] {
+    &[href$="user/PowerPlaidPlays"],
+    &[href$="user/ThePatMac"] {
         &:after {
-            background: url(%%sprites%%) 0 $sprite-row3-y no-repeat;
+            background: url(%%sprites%%) 0 $sprite-row4-y no-repeat;
             content: '';
             display: inline-block;
             height: $sprite-uflair-height;
