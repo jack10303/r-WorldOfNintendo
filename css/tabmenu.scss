@@ -97,7 +97,7 @@
             transition: color 1s;
 
             &:before {
-                background: url(%%sprites%%) 0 0 no-repeat;
+                background: url(%%sprites%%) -$sprite-row1-width*5 40px no-repeat; // default to wario
                 content: '';
                 height: $menu-psuedo-ht;
                 left: 0;
@@ -113,6 +113,10 @@
                 background: url(%%bg%%);
                 color: $red;
             } // &:hover
+
+            &:hover:before {
+                background-position: -$sprite-row1-width*5 10px;
+            } // &:hover:before
         } // a
     } // li
 } // #header-bottom-left .tabmenu

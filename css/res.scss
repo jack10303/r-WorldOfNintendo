@@ -1,19 +1,5 @@
 // Reddit Enhancement Suite styles
 html.res {
-    #header-bottom-left .tabmenu li #viewImagesButton { // gotta be specific here because we're being specific in tabmenu.scss
-        border: $border-main solid $black;
-        border-radius: $border-main-rad;
-        margin-left: 20px;
-
-        &:before { // wario
-            background-position: -$sprite-row1-width*5 40px;
-        } // &:before
-
-        &:hover:before {
-            background-position: -$sprite-row1-width*5 10px;
-        } // &:hover:before
-    } // #header-bottom-left .tabmenu li #viewImagesButton
-
     #header-bottom-right {
         border: 0 none;
 
@@ -24,12 +10,4 @@ html.res {
             top: 21px;
         } // &.res-navTop
     } // #header-bottom-right
-
-    &.csstransforms { // if CSS transforms are supported, make it flip around because Wario
-        #header-bottom-left .tabmenu li #viewImagesButton:before {
-            bottom: -$menu-psuedo-ht - $border-main;
-            top: auto;
-            transform: rotate(180deg);
-        } // #header-bottom-left .tabmenu li #viewImagesButton:before
-    } // &.csstransforms
 } // body.res
