@@ -115,7 +115,10 @@
     &[class*="flair-DK8bit"] {
         background-position: -$sprite-uflair-width*13 $sprite-row3-y;
     }
-
+    &[class*="flair-RedLink8bit"] {
+        background-position: -$sprite-uflair-width*14 $sprite-row3-y;
+    }
+ 
     // Mod-Assigned Special Top Secret Hidden Character Flair
     &[class*="flair-GoldBill"] {
         background-position: -$sprite-uflair-width*6 $sprite-row3-y;
